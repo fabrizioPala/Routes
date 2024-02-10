@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Welcome name="Fabrizio" age="29" />} />
         <Route path='/contatore' element={<Counter />} />
-      
+        <Route path="/utenti/:username" element={<ShowGitHubUser />} />
         <Route path='*' element={<NotFound />} />
         <Route path='/userlist' element={<GitHubUserList/>}/>
 
